@@ -47,3 +47,4 @@ git add 관리파일 등록
 
 # 통으로 다 = git add . 
 
+git push github master 저장보내기
