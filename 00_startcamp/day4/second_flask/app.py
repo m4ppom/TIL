@@ -47,8 +47,7 @@ def receive():
     stock = Stock(data, token='pk_63c229409ff14b67a6cc81e38927f1c4').get_quote()
     company_name = stock['companyName'] 
     latest_price = stock['iexRealtimePrice']
-   
-    url = 'https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=WXMbETdKM85UpFQpuZ8Sf4QcrUQyKaM5&searchdate=20190710&data=AP01'
+    url = 'https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=z6oY8VPVLsFt5DwacY4xg5cyuxU2XDYg&searchdate=20190711&data=AP01'
     response = requests.get(url).text
     money = json.loads(response)
     dal_kor = money['ttb']
